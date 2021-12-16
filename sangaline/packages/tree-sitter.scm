@@ -8,7 +8,7 @@
 (define-public tree-sitter
   (package
     (name "tree-sitter")
-    (version "0.19.4")
+    (version "0.20.1")
     (source (origin
               (method git-fetch)
               (uri (git-reference
@@ -16,7 +16,7 @@
                      (commit (string-append "v" version))))
               (file-name (git-file-name name (string-append "v" version)))
               (sha256
-                (base32 "1375ksjz2iysk9rh365z60n3f8ziqk41r8jdxjwsv9dsnd71nd3n"))))
+                (base32 "1f3kjqydf45lz3wc183ay52ahq29yk84zl89hhiqsn25k39wp9i4"))))
     (build-system gnu-build-system)
     (arguments
       '(#:phases (modify-phases %standard-phases
