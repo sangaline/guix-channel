@@ -18,15 +18,15 @@
 (define-public neovim-nightly
   (package
     (name "neovim-nightly")
-    (version "0150cc4")
+    (version "56fa08b")
     (source (origin
               (method git-fetch)
               (uri (git-reference
                      (url "https://github.com/neovim/neovim")
-                     (commit "0150cc41604ebb1b5b5f6920cf4673e541684e75")))
+                     (commit "56fa08b458cbf98fa83c21c3e683f8e7e91a334f")))
               (file-name (git-file-name name version))
               (sha256
-                (base32 "169fw9zmrddaj3h1v16yqfs6nylwmgd0fm9b8rznkcg71f761ag2"))))
+                (base32 "18a3kl3pjw3f2i897hmlyis2ryszc9f10iy1f5xyk08asy5wsl31"))))
     (build-system cmake-build-system)
     (arguments
       `(#:build-type "Release"
